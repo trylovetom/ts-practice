@@ -1,0 +1,32 @@
+{
+  "name": "ts-practice",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "ts-node src",
+    "dev:watch": "ts-node-dev --respawn --transpileOnly src",
+    "clean": "rimraf build/*",
+    "lint": "eslint . --ext .ts,.tsx",
+    "eslint": "eslint",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.1",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-config-standard-with-typescript": "^8.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "ts-node-dev": "^1.0.0-pre.40",
+    "typescript": "^3.5.3"
+  }
+}
